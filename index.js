@@ -13,7 +13,7 @@ const arrImages = [
 
 btn.addEventListener('click', () => {
   const magicNumber = Math.floor(Math.random() * (arrImages.length));
-  const src = `${image.src.slice(0, image.src.lastIndexOf('/') + 1)}${arrImages[magicNumber]}`;
+  const src = `images/${arrImages[magicNumber]}`;
   setSource({ src })
 });
 
