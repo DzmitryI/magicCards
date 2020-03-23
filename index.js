@@ -19,8 +19,9 @@ btn.addEventListener('click', () => {
   card.classList.add('close');
   loader.classList.remove('close');
   setSource({ src });
-  setInterval(() => getSource(), 2000);
 });
+
+setInterval(() => getSource(), 3000);
 
 setSource = async (body) => {
   try {
